@@ -10,7 +10,7 @@
     <!--
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css?_v=20250320171057"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.css?_v=20250320171057">
-    <link rel="stylesheet" href="css/style.css?_v=2.1">
+    <link rel="stylesheet" href="css/style.css?_v=2.11">
 </head>
 
 <body>
@@ -238,7 +238,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js?_v=20250320171057"></script>
 <!-- <script src="//cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js?_v=20250320171057" type="text/javascript"></script> -->
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js?_v=20250320171057"></script> -->
-<script src="js/app.js?_v=2.11"></script>
+<script src="js/app.js?_v=2.12"></script>
 <div class="popup form_loader " id="form_loader ">
     <div class="form_loader_block ">
         <div class="form_loader_animate "></div>
