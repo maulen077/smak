@@ -101,7 +101,6 @@
                 </div>
                 <p class="random__text">
                     {{ __('menu.random_text') }}
-                    test comm
                 </p>
             </div>
         </div>
