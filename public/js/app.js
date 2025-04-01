@@ -271,6 +271,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     } else {
                         console.error(`Не найден span для продукта ${productId}`);
                     }
+                    if(product.classList.contains('random__item')) {
+                        document.querySelector('body').classList.remove('shadow');
+                        document.querySelector('.random__items').classList.remove('active', 'spinning');
+                    }
                 }
             });
         }
