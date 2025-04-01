@@ -98,7 +98,10 @@
                         @endif
                     </div>
                 </div>
-                <p class="random__text">{{ __('menu.random_text') }}</p>
+                <p class="random__text">
+                    {{ __('menu.random_text') }}
+                    test comm
+                </p>
             </div>
         </div>
     </section>
