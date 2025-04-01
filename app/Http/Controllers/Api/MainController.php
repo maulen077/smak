@@ -8,6 +8,7 @@ use App\Models\Category;
 use App\Models\Dish;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
+use App\Models\Contact;
 
 class MainController extends Controller
 {
@@ -44,6 +45,7 @@ class MainController extends Controller
 
     public function contact()
     {
-        return view('web.contacts');
+        $contact = Contact::whereNotNull('instagram')->where('instagram', '!=', '')->first();
+        return view('web.contacts', compact('contact'));
     }
 }

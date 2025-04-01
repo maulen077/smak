@@ -6,6 +6,7 @@ use App\Http\Controllers\Admin\DishController;
 use App\Http\Controllers\Admin\OrderController;
 use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\Admin\BannerController;
+use App\Http\Controllers\Admin\ContactController;
 use App\Http\Controllers\Api\MenuController;
 use App\Http\Controllers\Api\MainController;
 use App\Http\Controllers\Api\BasketController;
@@ -85,6 +86,15 @@ Route::prefix('admin')->group(function () {
         Route::get('banner-create', [BannerController::class, 'create'])->name('banner_create');
         Route::post('banner-store', [BannerController::class, 'store'])->name('banner_store');
         Route::delete('banner-delete/{dish}', [BannerController::class, 'delete'])->name('banner_delete');
+    });
+
+    Route::group(['prefix'=> 'contact'], function () {
+        Route::get('', [ContactController::class, 'index'])->name('contacts');
+        Route::get('contact-create', [ContactController::class, 'create'])->name('contact_create');
+        Route::post('contact-store', [ContactController::class, 'store'])->name('contact_store');
+        Route::get('contact-edit/{contact}', [ContactController::class, 'edit'])->name('contact_edit');
+        Route::put('contact-update/{contact}', [ContactController::class, 'update'])->name('contact_update');
+        Route::delete('contact-delete/{contact}', [ContactController::class, 'delete'])->name('contact_delete');
     });
 
 });

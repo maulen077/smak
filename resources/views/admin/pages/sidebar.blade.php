@@ -65,6 +65,15 @@
                         </p>
                     </a>
                 </li>
+
+                <li class="nav-item">
+                    <a href="{{ route('contacts') }}" class="nav-link">
+                        <i class="nav-icon fas fa-tools"></i>
+                        <p>
+                            Контакты
+                        </p>
+                    </a>
+                </li>
             </ul>
         </nav>
 
