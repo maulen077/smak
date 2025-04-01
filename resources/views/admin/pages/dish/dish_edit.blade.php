@@ -28,6 +28,17 @@
             </div>
 
             <div class="form-group">
+                <label for="category_id">Категория:</label>
+                <select name="category_id" id="category_id" class="form-control">
+                    @foreach ($categories as $category)
+                        <option value="{{ $category->id }}" {{ $category->id == $dish->category_id ? 'selected' : '' }}>
+                            {{ $category->name }}
+                        </option>
+                    @endforeach
+                </select>
+            </div>
+
+            <div class="form-group">
                 <label for="photo">Изображение:</label>
                 <input type="file" name="photo" id="photo" class="form-control-file" accept="image/*">
             </div>

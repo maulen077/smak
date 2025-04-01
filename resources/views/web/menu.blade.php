@@ -38,12 +38,12 @@
                 <h2 class="category__title title">{{ __('menu.category') }}</h2>
                 <div class="category__items">
                     <!-- Кнопка "Все категории" -->
-                    <a href="{{ route('menu') }}" class="category__item {{ request('category_id') ? '' : 'active' }}">
-                        <div class="category__item-img">
-                            <img src="{{ asset('img/default-category.png') }}" alt="Все категории">
-                        </div>
-                        <div class="category__item-name">{{ __('menu.all') }}</div>
-                    </a>
+{{--                    <a href="{{ route('menu') }}" class="category__item {{ request('category_id') ? '' : 'active' }}">--}}
+{{--                        <div class="category__item-img">--}}
+{{--                            <img src="{{ asset('img/default-category.png') }}" alt="">--}}
+{{--                        </div>--}}
+{{--                        <div class="category__item-name">{{ __('menu.all') }}</div>--}}
+{{--                    </a>--}}
                     <!-- Динамический список категорий -->
                     @foreach ($categories as $category)
                         <a href="{{ route('menu', ['category_id' => $category->id]) }}"
@@ -76,7 +76,7 @@
                              data-product-quantity="1">
 
                             <div class="menu__item-img">
-                                <img src="{{ asset('storage/' . $dish->image) }}" alt="">
+                                <img src="{{ $dish->photo }}" alt="">
                             </div>
                             <div class="menu__item-name">{{ $dish->name }}</div>
                             <div class="menu__item-weight">{{ $dish->weight }} грамм</div>
@@ -126,7 +126,8 @@
 <footer class="footer">
     <div class="container">
         <div class="footer__container">
-            <a href="{{ route('index') }}" class="footer__item active">
+
+            <a href="{{ route('index') }}" class="footer__item ">
                 <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <mask id="mask0_0_4053" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="36" height="36">
                         <rect width="36" height="36" fill="white"/>
@@ -138,7 +139,7 @@
                 </svg>
                 <span>{{ __('menu.main') }}</span>
             </a>
-            <a href="{{ route('menu') }}" class="footer__item">
+            <a href="{{ route('menu') }}" class="footer__item active" >
                 <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <mask id="mask0_0_3084" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="36" height="36">
                         <rect width="36" height="36" fill="white"/>

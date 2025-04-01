@@ -28,7 +28,10 @@ class MainController extends Controller
             return $dish;
         });
 
-        $randomDish = $dishes->isNotEmpty() ? $dishes->random() : null;
+        $randomDishes = $dishes->isNotEmpty() ? $dishes->random(min(4, $dishes->count())) : collect();
+
+        // Финальное выбранное блюдо после "кручения"
+        $finalDish = $randomDishes->isNotEmpty() ? $randomDishes->random() : null;
 
         $recommend = Dish::where('is_recommend', true)->get()->map(function ($dish) use ($locale) {
             $dish->name = $dish->{"name_{$locale}"} ?? $dish->name;
@@ -36,7 +39,7 @@ class MainController extends Controller
             return $dish;
         });
 
-        return view('web.index', compact('categories', 'banners', 'dishes', 'randomDish', 'recommend'));
+        return view('web.index', compact('categories', 'banners', 'dishes', 'randomDishes', 'recommend', 'finalDish'));
     }
 
     public function contact()

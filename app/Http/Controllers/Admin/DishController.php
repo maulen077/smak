@@ -66,7 +66,8 @@ class DishController extends Controller
 
     public function edit(Dish $dish)
     {
-        return view('admin.pages.dish.dish_edit', compact('dish'));
+        $categories = Category::all();
+        return view('admin.pages.dish.dish_edit', compact('dish', 'categories'));
     }
 
     public function update(Request $request, Dish $dish)

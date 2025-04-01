@@ -26,4 +26,13 @@ return [
     'service_agree' => 'I agree',
     'contact' => 'Contacts',
     'offers' => 'Your suggestions will help us become better!',
+    'days' => [
+        'Mon' => 'Mn',
+        'Tue' => 'Tu',
+        'Wed' => 'We',
+        'Thu' => 'Th',
+        'Fri' => 'Fr',
+        'Sat' => 'St',
+        'Sun' => 'Sn',
+    ],
 ];

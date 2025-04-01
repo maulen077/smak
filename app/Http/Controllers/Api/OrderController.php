@@ -25,7 +25,21 @@ class OrderController extends Controller
 
         $totalPrice = $basketItems->sum('total_price');
 
-        return view('web.basket', compact('basketItems', 'totalPrice'));
+        $days = collect(range(0, 3))->map(function ($i) {
+            $date = now()->addDays($i);
+            return [
+                'day' => $date->format('d'),
+                'weekday' => __('menu.days.' . $date->format('D')),
+            ];
+        });
+
+        $times = [
+            '10:00 - 13:00',
+            '14:00 - 17:00',
+            '18:00 - 21:00',
+        ];
+
+        return view('web.basket', compact('basketItems', 'totalPrice', 'days', 'times'));
     }
 
     public function store(Request $request)

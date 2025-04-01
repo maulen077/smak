@@ -73,7 +73,8 @@
 <footer class="footer">
     <div class="container">
         <div class="footer__container">
-            <a href="{{ route('index') }}" class="footer__item active">
+
+            <a href="{{ route('index') }}" class="footer__item">
                 <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <mask id="mask0_0_4053" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="36" height="36">
                         <rect width="36" height="36" fill="white"/>
@@ -98,7 +99,7 @@
                 </svg>
                 <span>{{ __('menu.menu') }}</span>
             </a>
-            <a href="{{ route('contact') }}" class="footer__item">
+            <a href="{{ route('contact') }}" class="footer__item active">
                 <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M27.2799 29.0051C24.5689 31.716 17.6266 29.1688 11.7736 23.3158C5.92065 17.4629 3.37347 10.5205 6.08431 7.80961L7.8692 6.02473C9.10141 4.79251 11.1318 4.82508 12.4042 6.09748L15.1688 8.86211C16.4412 10.1345 16.4737 12.1649 15.2416 13.3971L14.8582 13.7805C14.1929 14.4458 14.1278 15.519 14.746 16.268C15.3423 16.9907 15.9851 17.7103 16.6821 18.4074C17.3791 19.1044 18.0987 19.7472 18.8213 20.3435C19.5705 20.9616 20.6437 20.8965 21.3089 20.2313L21.6923 19.8479C22.9245 18.6157 24.9549 18.6483 26.2273 19.9207L28.992 22.6852C30.2644 23.9576 30.2968 25.988 29.0647 27.2202L27.2799 29.0051Z" fill="#D8D8D8"/>
                     <path d="M25.2887 13.4438C24.9503 12.6182 24.4459 11.8447 23.7756 11.1744C23.143 10.5419 22.4187 10.0571 21.6455 9.72009" stroke="#D8D8D8" stroke-width="1.5" stroke-linecap="round"/>
