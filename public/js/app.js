@@ -265,6 +265,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     product.classList.add('inBasket');
         
                     const quantitySpan = product.querySelector('.js-cart-counters span');
+                    console.log(product.querySelector('.js-cart-counters'));
+                    console.log(product.querySelector('.js-cart-counters span'));
+                    console.log(product, productId);
                     if (quantitySpan) {
                         quantitySpan.innerHTML = cart[productId].quantity;
                         // console.log(cart[productId])
