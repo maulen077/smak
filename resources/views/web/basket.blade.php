@@ -99,6 +99,7 @@
                                         @endforeach
                                     </div>
                                 </div>
+                                <textarea hidden class="textarea-table" name="" id=""></textarea>
                                 <button type="submit" class="basket__form-send">{{ __('menu.submit') }}</button>
                             </div>
                         </form>
