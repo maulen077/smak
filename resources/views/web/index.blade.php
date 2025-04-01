@@ -88,6 +88,20 @@
                                      data-product-quantity="1">
                                     <img src="{{ asset($dish->photo) }}" alt="">
                                     <a href="javascript:;" class="js-buy"></a>
+                                    <div class="recomend__item-counters js-cart-counters" style="display: none;">
+                                        <button type="button" class="recomend__item-buy js-card-plus">
+                                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0.550388 5.55036C0.246417 5.55036 0 5.30394 0 4.99997C0 4.696 0.246417 4.44958 0.550388 4.44958H9.44961C9.75358 4.44958 10 4.696 10 4.99997C10 5.30394 9.75358 5.55036 9.44961 5.55036H0.550388Z" fill="#303843"/>
+                                                <path d="M4.45 0.550388C4.45 0.246417 4.69642 0 5.00039 0C5.30436 0 5.55078 0.246417 5.55078 0.550388L5.55078 9.44961C5.55078 9.75358 5.30436 10 5.00039 10C4.69642 10 4.45 9.75358 4.45 9.44961L4.45 0.550388Z" fill="#303843"/>
+                                            </svg>
+                                        </button>
+                                        <span>1</span>
+                                        <button type="button" class="recomend__item-buy js-card-minus">
+                                            <svg width="10" height="2" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.18408 1.73114C0.90794 1.73114 0.684082 1.50728 0.684082 1.23114C0.684082 0.954998 0.90794 0.73114 1.18408 0.73114H9.26858C9.54472 0.73114 9.76858 0.954998 9.76858 1.23114C9.76858 1.50728 9.54472 1.73114 9.26858 1.73114H1.18408Z" fill="#303843"/>
+                                            </svg>
+                                        </button>
+                                    </div>
                                 </div>
                             @endforeach
 {{--                            <p>Выбрано блюдо:</p>--}}
