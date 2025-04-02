@@ -230,7 +230,7 @@
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/jquery.maskedinput.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js?_v=20250320171057"></script>
-<script src="js/app.js?_v=2.13"></script>
+<script src="js/app.js?_v=2.14"></script>
 <div class="popup form_loader " id="form_loader ">
     <div class="form_loader_block ">
         <div class="form_loader_animate "></div>

@@ -571,13 +571,6 @@ window.onload = () => {
         $(this).setCursorPosition(3)
     }).mask('+7 (999) 999 99 99')
 
-    $('.way').waypoint({
-        handler: function() {
-            $(this.element).addClass("way--active");
-
-        },
-        offset: '88%'
-    });
     const heroSlider = new Swiper('.hero__slider', {
         spaceBetween: 15,
         slidesPerView: 'auto',
