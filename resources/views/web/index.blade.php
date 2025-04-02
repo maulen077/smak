@@ -227,17 +227,10 @@
         </div>
     </div>
 </footer>
-<!-- <script src="js/jquery-3.6.0.min.js?_v=20250320171057"></script>
-<script src="js/slick.min.js?_v=20250320171057"></script> -->
-<!--
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.7/jquery.inputmask.min.js?_v=20250320171057"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js?_v=20250320171057"></script> -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20250320171057" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js?_v=20250320171057" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/app.js?_v=2.12"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js?_v=20250320171057"></script>
-<!-- <script src="//cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js?_v=20250320171057" type="text/javascript"></script> -->
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js?_v=20250320171057"></script> -->
 <script src="js/app.js?_v=2.12"></script>
 <div class="popup form_loader " id="form_loader ">
     <div class="form_loader_block ">
