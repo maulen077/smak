@@ -80,7 +80,7 @@
                             @foreach($randomDishes as $dish)
                                 <div class="random__item js-product"
                                      data-id="{{ $dish->id }}"
-                                     data-product-id="{{ $dish->id }}"
+                                     data-product-id="{{ $dish->id }}-1"
                                      data-product-name="{{ $dish->name }}"
                                      data-product-desc="{{ $dish->description }}"
                                      data-product-img="{{ $dish->photo }}"
