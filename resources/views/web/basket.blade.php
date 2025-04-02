@@ -109,19 +109,20 @@
         <script>
             document.addEventListener("DOMContentLoaded", function () {
                 let form = document.getElementById("order-form");
-
-                form.addEventListener("submit", function (event) {
-                    let cart = localStorage.getItem("SmakCart");
-
-                    if (!cart || cart === "{}") {
-                        alert("Ваша корзина пуста!");
-                        event.preventDefault();
-                        return;
-                    }
-
-                    console.log("Отправляемый cart:", cart); // Проверка в консоли
-                    document.getElementById("cart-input").value = cart; // Записываем данные в скрытое поле
-                });
+                if(form) {
+                    form.addEventListener("submit", function (event) {
+                        let cart = localStorage.getItem("SmakCart");
+    
+                        if (!cart || cart === "{}") {
+                            alert("Ваша корзина пуста!");
+                            event.preventDefault();
+                            return;
+                        }
+    
+                        console.log("Отправляемый cart:", cart); // Проверка в консоли
+                        document.getElementById("cart-input").value = cart; // Записываем данные в скрытое поле
+                    });
+                }
             });
         </script>
         <div class="basket-modal">

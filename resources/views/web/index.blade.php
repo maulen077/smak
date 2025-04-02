@@ -10,7 +10,7 @@
     <!--
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css?_v=20250320171057"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.css?_v=20250320171057">
-    <link rel="stylesheet" href="css/style.css?_v=2.11">
+    <link rel="stylesheet" href="css/style.css?_v=2.12">
 </head>
 
 <body>
@@ -229,9 +229,8 @@
 </footer>
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/jquery.maskedinput.min.js"></script>
-<script src="js/app.js?_v=2.12"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js?_v=20250320171057"></script>
-<script src="js/app.js?_v=2.12"></script>
+<script src="js/app.js?_v=2.13"></script>
 <div class="popup form_loader " id="form_loader ">
     <div class="form_loader_block ">
         <div class="form_loader_animate "></div>
