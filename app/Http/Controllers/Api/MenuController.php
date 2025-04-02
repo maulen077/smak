@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Category;
 use App\Models\Dish;
+use App\Models\Contact;
 use Illuminate\Support\Facades\App;
 
 class MenuController extends Controller
@@ -29,5 +30,6 @@ class MenuController extends Controller
 
         return view('web.menu', compact('categories', 'dishes'));
     }
+    
 
 }

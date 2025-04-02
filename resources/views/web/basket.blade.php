@@ -17,7 +17,7 @@
 <header class="header way way-header">
     <div class="container">
         <div class="header__container">
-            <a href="#" class="header__logo">
+            <a href="{{ route('index') }}" class="header__logo">
                 <img src="img/h-logo.png" alt="Смак">
             </a>
             <div class="header__lang">
@@ -56,7 +56,7 @@
 
                                 <div class="basket__form-deliv">
                                     <label for="deliv">
-                                        <input type="radio" hidden name="delivery" id="deliv" checked>
+                                        <input type="radio" hidden name="delivery_type" id="deliv" value="delivery" checked>
                                         <div>
                                             <svg width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M10.1336 1.11623C9.89917 0.881888 9.58129 0.750244 9.24983 0.750244C8.91838 0.750244 8.60049 0.881888 8.36608 1.11623L4.24983 5.23123L2.63358 3.61623L2.51608 3.51248C2.26484 3.31821 1.94908 3.22686 1.63293 3.25698C1.31677 3.2871 1.02394 3.43642 0.813893 3.67463C0.603851 3.91284 0.492355 4.22206 0.502048 4.5395C0.511741 4.85693 0.641898 5.15878 0.866083 5.38373L3.36608 7.88373L3.48358 7.98748C3.72409 8.17404 4.0244 8.26644 4.32818 8.24734C4.63197 8.22824 4.91834 8.09895 5.13358 7.88373L10.1336 2.88373L10.2373 2.76623C10.4239 2.52572 10.5163 2.22541 10.4972 1.92163C10.4781 1.61784 10.3488 1.33147 10.1336 1.11623Z" fill="white"/>
@@ -65,7 +65,7 @@
                                         <span>{{ __('menu.delivery') }}</span>
                                     </label>
                                     <label for="pickup">
-                                        <input type="radio" hidden name="delivery" id="pickup">
+                                        <input type="radio" hidden name="delivery_type" id="pickup" value="pickup">
                                         <div>
                                             <svg width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M10.1336 1.11623C9.89917 0.881888 9.58129 0.750244 9.24983 0.750244C8.91838 0.750244 8.60049 0.881888 8.36608 1.11623L4.24983 5.23123L2.63358 3.61623L2.51608 3.51248C2.26484 3.31821 1.94908 3.22686 1.63293 3.25698C1.31677 3.2871 1.02394 3.43642 0.813893 3.67463C0.603851 3.91284 0.492355 4.22206 0.502048 4.5395C0.511741 4.85693 0.641898 5.15878 0.866083 5.38373L3.36608 7.88373L3.48358 7.98748C3.72409 8.17404 4.0244 8.26644 4.32818 8.24734C4.63197 8.22824 4.91834 8.09895 5.13358 7.88373L10.1336 2.88373L10.2373 2.76623C10.4239 2.52572 10.5163 2.22541 10.4972 1.92163C10.4781 1.61784 10.3488 1.33147 10.1336 1.11623Z" fill="white"/>

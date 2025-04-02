@@ -48,7 +48,7 @@ class OrderController extends Controller
         $validated = $request->validate([
             'name' => 'nullable|string',
             'phone' => 'nullable|string',
-            'delivery_type' => 'nullable|string',
+            'delivery_type' => 'nullable|in:delivery,pickup',
             'address' => 'nullable|string',
             'comment' => 'nullable|string',
             'delivery_date' => 'nullable|date',

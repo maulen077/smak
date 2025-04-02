@@ -17,7 +17,7 @@
 <header class="header way way-header">
     <div class="container">
         <div class="header__container">
-            <a href="#" class="header__logo">
+            <a href="{{ route('index') }}" class="header__logo">
                 <img src="img/h-logo.png" alt="Смак">
             </a>
             <div class="header__lang">
@@ -54,7 +54,7 @@
                             <img src="img/insta.png" alt="">
                         </div>
                         <div class="contacts__list-info">
-                            <a href="#" target="_blank" class="contacts__list-title">smak.group</a>
+                            <a href="{{ $contact->instagram }}" target="_blank" class="contacts__list-title">smak.group</a>
                         </div>
                     </li>
                 </ul>
