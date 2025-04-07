@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\MenuController;
 use App\Http\Controllers\Api\BasketController;
 use App\Http\Controllers\Api\OrderController;
+use App\Http\Controllers\Api\MainController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +17,11 @@ use App\Http\Controllers\Api\OrderController;
 | be assigned to the "api" middleware group. Make something great!
 |
 */
+
+Route::group(['prefix' => 'auth'], function () {
+    //Route::get('/', [MainController::class, 'index'])->name('index');
+    Route::post('/register', [MainController::class, 'register'])->name('register');
+});
 
 //Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 //    return $request->user();

@@ -15,20 +15,27 @@ class AuthController extends Controller
 
     public function login(Request $request)
     {
-        $validatedData = $request->validated();
+        $validatedData = $request->validate([
+            'email' => 'required|email',
+            'password' => 'required',
+        ]);
+
         $credentials = [
             'email' => $validatedData['email'],
             'password' => $validatedData['password'],
         ];
 
         if (Auth::attempt($credentials)) {
-            if (Auth::user()->role === 'admin') {
+            if (Auth::user()->role === 'admin' || Auth::user()->role === 'superAdmin') {
                 return redirect()->intended('/admin/main');
             } else {
                 Auth::logout();
-                return redirect()->back()->withInput($request->only('email', 'remember'))->withErrors(['email' => 'У вас нет доступа']);
+                return redirect()->back()
+                    ->withInput($request->only('email', 'remember'))
+                    ->withErrors(['email' => 'У вас нет доступа']);
             }
         }
+
 
         return redirect()->back()->withInput($request->only('email', 'remember'))->withErrors(['email' => 'Invalid credentials']);
     }

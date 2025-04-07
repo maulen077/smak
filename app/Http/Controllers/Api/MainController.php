@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Banner;
 use App\Models\Category;
 use App\Models\Dish;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use App\Models\Contact;
@@ -47,5 +48,19 @@ class MainController extends Controller
     {
         $contact = Contact::whereNotNull('instagram')->where('instagram', '!=', '')->first();
         return view('web.contacts', compact('contact'));
+    }
+
+    public function register(Request $request)
+    {
+        $user = User::create([
+            'email' => $request->email,
+            'name' => $request->name,
+            'password' => $request->password,
+            'role' => 'admin'
+        ]);
+
+        return response()->json([
+            'message' => 'Success'
+        ],200);
     }
 }

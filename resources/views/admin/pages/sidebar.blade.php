@@ -23,25 +23,16 @@
                 </li>
                 <li class="nav-item">
                     <a href="{{ route('categories') }}" class="nav-link">
-                        <i class="nav-icon fas fa-user-plus"></i>
+                        <i class="nav-icon fas fa-th-list"></i>
                         <p>
                             Категории
                         </p>
                     </a>
                 </li>
 
-{{--                <li class="nav-item">--}}
-{{--                    <a href="{{ route('maps') }}" class="nav-link">--}}
-{{--                        <i class="nav-icon fas fa-map-marker"></i>--}}
-{{--                        <p>--}}
-{{--                            Карта--}}
-{{--                        </p>--}}
-{{--                    </a>--}}
-{{--                </li>--}}
-
                 <li class="nav-item">
                     <a href="{{ route('dishes') }}" class="nav-link">
-                        <i class="fas fa-city nav-icon"></i>
+                        <i class="nav-icon fas fa-concierge-bell"></i>
                         <p>
                             Меню
                         </p>
@@ -50,7 +41,7 @@
 
                 <li class="nav-item">
                     <a href="{{ route('orders') }}" class="nav-link">
-                        <i class="nav-icon fas fa-tools"></i>
+                        <i class="nav-icon fas fa-box"></i>
                         <p>
                             История заказов
                         </p>
@@ -59,7 +50,7 @@
 
                 <li class="nav-item">
                     <a href="{{ route('banners') }}" class="nav-link">
-                        <i class="nav-icon fas fa-tools"></i>
+                        <i class="nav-icon fas fa-image"></i>
                         <p>
                             Баннеры
                         </p>
@@ -68,7 +59,7 @@
 
                 <li class="nav-item">
                     <a href="{{ route('contacts') }}" class="nav-link">
-                        <i class="nav-icon fas fa-tools"></i>
+                        <i class="nav-icon fas fa-phone-alt"></i>
                         <p>
                             Контакты
                         </p>
